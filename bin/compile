@@ -456,4 +456,10 @@ echo "Boot failed: \$exitproc"
 exit 1
 SH
 
+if [ -f bin/post_compile ]; then
+    echo "-----> Running post-compile hook"
+    chmod +x bin/post_compile
+    bin/post_compile
+fi
+
 chmod +x "bin/run"
