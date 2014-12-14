@@ -15,7 +15,7 @@ fi
 BUILD_DIR="$1"
 CACHE_DIR="$2"
 
-apt-get -y libreadline5
+apt-get -y install libreadline5
 
 cd "$BUILD_DIR"
 mkdir -p "$CACHE_DIR/package"
