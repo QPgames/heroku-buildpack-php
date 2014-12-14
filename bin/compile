@@ -108,7 +108,7 @@ function install_composer_deps() {
         done
     fi
 
-    php "vendor/composer/bin/composer.phar" self-update --no-interaction --quiet
+    #php "vendor/composer/bin/composer.phar" self-update --no-interaction --quiet
 
     status "Installing application dependencies with Composer"
     {
